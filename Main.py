@@ -16,7 +16,7 @@ from pickle import load
 heading_font_size = 17  # <-- change these values to get outputs smaller or bigger
 output_font_size = 15  # <-- change these values to get outputs smaller or bigger
 green_shade = "#34822a"
-master_key = False  # <-- Change this to True to bypass authentication
+master_key = True  # <-- Change this to True to bypass authentication
 
 # SQL Connection with Python
 try:
@@ -37,7 +37,7 @@ def show_databases():
     w3 = Toplevel()
     w3.resizable(0, 0)
     w3.title("Output")
-    w3.iconbitmap("pslogo.ico")
+    w3.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 450
@@ -71,7 +71,7 @@ def show_tables():
     w4 = Toplevel()
     w4.resizable(0, 0)
     w4.title("Output")
-    w4.iconbitmap("pslogo.ico")
+    w4.iconbitmap("./IcoImages/pslogo.ico")
     w4.config(bg="white")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
@@ -108,7 +108,7 @@ def create_table():
     w5 = Toplevel()
     w5.resizable(0, 0)
     w5.title("Input")
-    w5.iconbitmap("pslogo.ico")
+    w5.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 200
@@ -150,7 +150,7 @@ def display_Struc():
     w6 = Toplevel()
     w6.resizable(0, 0)
     w6.title("Input")
-    w6.iconbitmap("pslogo.ico")
+    w6.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 200
@@ -168,7 +168,7 @@ def display_Struc():
         w11.resizable(0, 0)
         w11.title("Output")
         w11.config(bg="white")
-        w11.iconbitmap("pslogo.ico")
+        w11.iconbitmap("./IcoImages/pslogo.ico")
         Label(
             w11,
             text="Field",
@@ -274,7 +274,7 @@ def add_rec():
     w7 = Toplevel()
     w7.resizable(0, 0)
     w7.title("Input")
-    w7.iconbitmap("pslogo.ico")
+    w7.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 200
@@ -361,7 +361,7 @@ def update_rec():
     w8 = Toplevel()
     w8.resizable(0, 0)
     w8.title("Input")
-    w8.iconbitmap("pslogo.ico")
+    w8.iconbitmap("./IcoImages/pslogo.ico")
     w8.config(bg="white")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
@@ -435,7 +435,7 @@ def fetch_data():
     w9 = Toplevel()
     w9.resizable(0, 0)
     w9.title("Input")
-    w9.iconbitmap("pslogo.ico")
+    w9.iconbitmap("./IcoImages/pslogo.ico")
     w9.config(bg="white")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
@@ -474,7 +474,7 @@ def fetch_data():
             w10.resizable(0, 0)
             w10.title("Output")
             w10.config(bg="white")
-            w10.iconbitmap("pslogo.ico")
+            w10.iconbitmap("./IcoImages/pslogo.ico")
             Label(
                 w10,
                 text="Rollno",
@@ -564,7 +564,7 @@ def fetch_data():
             w10.resizable(0, 0)
             w10.title("Output")
             w10.config(bg="white")
-            w10.iconbitmap("pslogo.ico")
+            w10.iconbitmap("./IcoImages/pslogo.ico")
             Label(
                 w10,
                 text="Rollno",
@@ -659,7 +659,7 @@ def fetch_data():
             w10.resizable(0, 0)
             w10.title("Output")
             w10.config(bg="white")
-            w10.iconbitmap("pslogo.ico")
+            w10.iconbitmap("./IcoImages/pslogo.ico")
             Label(
                 w10,
                 text="Rollno",
@@ -762,7 +762,7 @@ def delete_rec():
     w12 = Toplevel()
     w12.resizable(0, 0)
     w12.title("Input")
-    w12.iconbitmap("pslogo.ico")
+    w12.iconbitmap("./IcoImages/pslogo.ico")
     w12.config(bg="white")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
@@ -810,7 +810,7 @@ def topperlist():
     w13 = Toplevel()
     w13.resizable(0, 0)
     w13.title("result")
-    w13.iconbitmap("pslogo.ico")
+    w13.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 200
@@ -827,7 +827,7 @@ def topperlist():
             w14.resizable(0, 0)
             w14.title("Output")
             w14.config(bg="white")
-            w14.iconbitmap("pslogo.ico")
+            w14.iconbitmap("./IcoImages/pslogo.ico")
             Label(
                 w14,
                 text="Rollno",
@@ -938,7 +938,7 @@ def fetch_data_d():
     w9 = Toplevel()
     w9.resizable(0, 0)
     w9.title("Input")
-    w9.iconbitmap("pslogo.ico")
+    w9.iconbitmap("./IcoImages/pslogo.ico")
     w9.config(bg="white")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
@@ -956,7 +956,7 @@ def fetch_data_d():
         w10.resizable(0, 0)
         w10.title("Output")
         w10.config(bg="white")
-        w10.iconbitmap("pslogo.ico")
+        w10.iconbitmap("./IcoImages/pslogo.ico")
         Label(
             w10,
             text="Rollno",
@@ -1067,13 +1067,13 @@ sh = root.winfo_screenheight()
 ww = 450
 wh = 300
 root.geometry(f"{ww}x{wh}+{int(sw / 2 - ww / 2)}+{int(sh / 2 - wh / 2)}")
-root.iconbitmap("pslogo.ico")
+root.iconbitmap("./IcoImages/pslogo.ico")
 root.title("Student Management System")
 
 canva = Canvas(root, width=455, height=305, bg="white", highlightthickness=0)
 canva.pack()
 
-student_logo = PhotoImage(file="student.png")
+student_logo = PhotoImage(file="./Images/student.png")
 canva.create_image(350, 175, image=student_logo)
 canva.create_rectangle(-1, -1, 450, 67, fill="#34822a")
 
@@ -1083,7 +1083,7 @@ canva.create_rectangle(-1, -1, 450, 67, fill="#34822a")
 def commandz():
     root2 = Toplevel(root)
     root2.resizable(0, 0)
-    root2.iconbitmap("pslogo.ico")
+    root2.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 390
@@ -1230,7 +1230,7 @@ def verification():
     root3 = Toplevel()
     root3.resizable(0, 0)
     root3.title("Authentication")
-    root3.iconbitmap("pslogo.ico")
+    root3.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 250
@@ -1278,7 +1278,7 @@ def settings():
     settings_window = Toplevel()
     settings_window.resizable(0, 0)
     settings_window.title("Settings")
-    settings_window.iconbitmap("pslogo.ico")
+    settings_window.iconbitmap("./IcoImages/pslogo.ico")
     sw = root.winfo_screenwidth()
     sh = root.winfo_screenheight()
     ww = 310
@@ -1332,10 +1332,10 @@ next_X = 172
 next_Y = 120
 next_label = Label(root, text="Next", font="COCOGOOSE 23", fg="#34822a", bg="white")
 next_label.place(y=next_Y + 3, x=next_X - 90)
-nextbimage = PhotoImage(file="next.png")
+nextbimage = PhotoImage(file="./Images/next.png")
 nextb = Button(root, image=nextbimage, borderwidth=0, command=com, bg="white")
 nextb.place(x=next_X, y=next_Y, width=50, height=50)
-crossbimage = PhotoImage(file="cross.png")
+crossbimage = PhotoImage(file="./Images/cross.png")
 crossb = Button(
     root, image=crossbimage, borderwidth=0, command=root.destroy, bg="white"
 )
@@ -1350,7 +1350,7 @@ message_label = Label(
     root, text=message, fg="#34822a", bg="white", font=("Prompt Light", 8)
 )
 message_label.place(x=88, y=68)
-settings_image = PhotoImage(file="gear.png")
+settings_image = PhotoImage(file="./Images/gear.png")
 settings_button = Button(
     root, image=settings_image, borderwidth=0, command=settings, bg="white"
 ).place(x=425, y=274)
